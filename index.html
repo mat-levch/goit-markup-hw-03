@@ -12,22 +12,24 @@
 
 <body>
   <!-- Шапка сайта -->
-  <header>
-    <nav>
+  <header class="page-header">
+    <div class="main-nav">  
+    <nav class="container main-nav">
       <a href="./index.html" class="logo"> <span class="color-logo">Web</span>Studio</a>
       <ul class="site-nav list">
-        <li><a href="" class="link current" >Студия</a></li>
-        <li><a href="./portfolio.html" class="link" >Портфолио</a></li>
-        <li><a href="" class="link" >Контакты</a></li>
+        <li class="item"><a href="" class="link current" >Студия</a></li>
+        <li class="item"><a href="./portfolio.html" class="link" >Портфолио</a></li>
+        <li class="item"><a href="" class="link" >Контакты</a></li>
       </ul>
 
-      <ul class="site-nav-contact list" >
-        <li>
+      <ul class="site-nav-contact list">
+        <li class="item-nav">
           <a href="mailto:info@devstudio.com" class="site-nav-contact">info@devstudio.com</a>
           <a href="tel:+380961111111" class="site-nav-contact">+38 096 111 11 11 </a>
         </li>
       </ul>
     </nav>
+    </div> 
   </header>
 
   <main>
@@ -37,6 +39,7 @@
       <button type= “ ” class="button">Заказать услугу</button> 
     </section> 
     <!-- Приемущества -->
+    <div class="features-container">
     <section>
       <ul class="features">
         <li>
@@ -71,9 +74,11 @@
           </p>
         </li>
       </ul>
+    </div>
     </section>
 
     <!-- Чем мы занимаемся -->
+    <div class="features-container">
     <section>
       <h2 class="our-job">Чем мы занимаемся</h2>
       <ul>
@@ -81,12 +86,14 @@
         <li class="photo"><img src="./images/photo2.jpg" alt="Разработка" width="370" /></li>
         <li class="photo"><img src="./images/photo3.jpg" alt="Веб дизайн" width="370" /></li>
       </ul>
+    </div>
     </section>
 
     <!-- Наша команда -->
+    <div class="team-section-bg-color-outside" >
     <section class="team-section-bg-color">
       <h2 class="team-section">Наша команда</h2>
-      <ul>
+      <ul class="photo-padding">
         <li class="photo">
           <img src="./images/member1.jpg" alt="Член нашей команды" width="270" />
           <h3 class="name-member-section">Игорь Демьяненко</h3>
@@ -111,10 +118,12 @@
           <p class="second-text-team">UI Designer</p>
         </li>
       </ul>
+    </div>
     </section>
   </main>
 
   <!-- Футер -->
+  <div class="footer-bg">
   <footer class="footer-section">
 
     <a href="./index.html" class=" logo "> <span class="color-logo">Web</span><span class="color-logo-footer">Studio</span> </a>
@@ -122,6 +131,7 @@
     <a href="mailto:info@example.com" class="contact-footer-section">info@example.com</a>
     <a href="tel:+380991111111" class="contact-footer-section" >+38 099 111 11 11</a>
   </footer>
+  </div>
 </body>
 
 </html>

@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root{
 --primary-text-color:#212121;
@@ -18,10 +23,27 @@ body{
 
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+.page-header{
+    background-color: #FFFFFF;
+}
+
+.container{
+    width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid red;
+}
+
 
 /* logo section */
 .logo{
+padding-top: 24px;
+padding-bottom: 25px;
 font-family: Raleway,sans-serif;
 font-weight: 700; 
 font-size: 26px;
@@ -38,22 +60,51 @@ text-decoration: none;
 .color-logo-footer{
     color: #FFFFFF;
 }
+
+/* main nav  */
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
 /* site-nav section */
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+
     color:var(--primary-text-color);
     font-weight: 500; 
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
+
 }
 .site-nav-contact{
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: #757575;
     font-size:14px;
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
+    
+}
+.site-nav .item +.item{
+    margin-left: 50px;
+}
+
+.item-nav .site-nav-contact + .site-nav-contact{
+    margin-left: 50px;
 }
 
 .site-nav .link:hover, 
@@ -69,22 +120,37 @@ text-decoration: none;
  .link.current {
     color: var(--accent-color);
 }
+
+
 /* Hero section */
-.hero-title{    
+.hero-title{ 
+    margin-bottom: 94px;
+
+    outline: solid red;   
     background-color:var(--background-color-1);        
     text-align:Center;  
-
+    
 }
 
 .hero-title-text{
+    margin-top: 0px;
+    margin-bottom: 30px; 
+
     color:#FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;   
-    letter-spacing: 0.06em;  
+    letter-spacing: 0.06em;
+  
+
 }
 /* button section */
 .button{
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+
+    min-width: 200px;
     font-family: Roboto,sans-serif;
     font-weight: 500;
     background-color: #2196F3;
@@ -92,15 +158,29 @@ text-decoration: none;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    text-align: center;
+    
+    
 }
 /* features section */
+.features-container{
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+}
 .features, .title{
-  color:var(--primary-text-color);  
-   font-size: 14px;
-   line-height: 1.14;
-   list-style: none;  
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    color:var(--primary-text-color);  
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;  
 }
 .second-text-title{
+    margin-top: 0px;
+    margin-bottom: 94px;
+    
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -111,45 +191,91 @@ text-decoration: none;
 /* Чем мы занимаемся section  */
 
 .our-job{
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    outline: solid red;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: Center;
     list-style: none;
+    
 }
 /* team section */
-.team-section-bg-color{
+.team-section-bg-color-outside{
     background-color: #F5F4FA;
 }
-.team-section{    
-    font-weight:700;
+.team-section-bg-color{
+    margin-left: 215px;
+    margin-right: 215px;
+    padding-bottom: 94px;
+
+    outline: solid red;
+    background-color: #F5F4FA;
+    
+}
+.team-section{ 
+    margin-bottom: 50px;
+
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: Center;
     list-style: none;
+     
+    
+
 }
-.name-member-section{        
+.name-member-section{  
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;  
+    
 }
 
 .photo{
-    list-style: none;
-}
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 108px;
 
+    list-style: none;
+    background-color: #FFFFFF;
+    
+}
+.photo-padding{
+    padding: 0px;
+}
 .second-text-team{
+    margin-top: 0px;
+    margin-bottom: 30px;
+
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.17;
     
+    
 }
 
 
 /* footer section */
-.footer-section{
+.footer-bg{
+    outline: solid red;
     background-color:var(--background-color-1);
+}
+.footer-section{
+    margin-left: auto;
+    margin-right: auto;
 
+    background-color:var(--background-color-1);
+    width: 1230px;
+    height: 80px;
+    
 }
 .contact-footer-section{
     color: #FFFFFF99;
@@ -173,22 +299,38 @@ text-decoration: none;
 /* Porfolio */
 
 /* button section */
-.button-portfolio{
-    background-color: #F5F4FA; 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    
-}
+
 
 .button-type{
+    display: flex;
     font-family: Roboto,sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: Center;
+    text-align: center;
     list-style: none;
+    
+}
+.button-portfolio{
+    padding: 6px 22px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    background-color: #F5F4FA; 
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    min-width: 145px;
+    
+}
+
+
+
+.button-type .item + .item{
+    margin-right: 8px;
 }
 
 .button-portfolio:hover,
@@ -198,23 +340,42 @@ text-decoration: none;
 }
 /* Content section */
 .photo-portfolio{
+    margin-bottom: 30px;
+    margin-right: 215px;
+    margin-left: 215px;
     list-style: none;
+    
+}
+.photo-portfolio-size{
+    padding: 0px;
 }
 .photo-decoration{
     text-decoration: none;
 }
     .content-header{
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+
     color: #212121;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    
     }
 .second-content-header{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
+    
 }
 
 
