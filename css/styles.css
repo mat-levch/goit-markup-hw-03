@@ -87,6 +87,7 @@ text-decoration: none;
     letter-spacing: 0.02em;
 
 }
+
 .site-nav-contact{
     margin-left: auto;
     padding-top: 32px;
@@ -168,6 +169,18 @@ text-decoration: none;
     margin-right: 215px;
     margin-bottom: 94px;
 }
+
+    .features{
+        display: flex;
+        
+    }
+
+    .features, .item + .item{
+        margin-left: 30px;
+        
+        
+        
+    }
 .features, .title{
     margin-top: 0px;
     margin-bottom: 10px;
@@ -189,7 +202,11 @@ text-decoration: none;
 }
 
 /* Чем мы занимаемся section  */
-
+.our-job-container{
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+}
 .our-job{
     margin-top: 0px;
     margin-bottom: 50px;
@@ -299,6 +316,9 @@ text-decoration: none;
 /* Porfolio */
 
 /* button section */
+.button-type-flex{
+    align-items: center;
+}
 
 
 .button-type{
@@ -339,15 +359,23 @@ text-decoration: none;
     background-color: var(--accent-color);
 }
 /* Content section */
+.porfolio-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .photo-portfolio{
     margin-bottom: 30px;
     margin-right: 215px;
     margin-left: 215px;
     list-style: none;
-    
+    width: 370px;
+    background-color: tomato;
 }
-.photo-portfolio-size{
-    padding: 0px;
+ .photo-portfolio-size{
+    padding: 0px;   
+}
+.photo-portfolio-size:nth-child(3n){
+    margin-right: 30px;
 }
 .photo-decoration{
     text-decoration: none;
