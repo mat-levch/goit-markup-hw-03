@@ -130,15 +130,18 @@ text-decoration: none;
 
 
 /* Hero section */
-.hero-title{ 
+.hero{ 
     margin-bottom: 94px;
-  
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
     background-color:var(--background-color-1);        
     text-align:Center;  
+
     
 }
 
-.hero-title-text{
+.hero-text{
     margin-top: 0px;
     margin-bottom: 30px; 
 
