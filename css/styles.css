@@ -31,6 +31,7 @@ img{
 }
 .page-header{
     background-color: #FFFFFF;
+    border: 1px solid #ECECEC;
 }
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -379,7 +380,7 @@ ul{
     text-align: center;
     border: 1px solid transparent;
     border-radius: 4px;
-    
+
     background-color: #F5F4FA; 
     font-family: Roboto,sans-serif;
     font-weight: 500;
