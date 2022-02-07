@@ -43,10 +43,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container{
     padding: 0 15px;
-    width: 1200px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
-    outline: solid red;
 }
 
 
@@ -132,8 +131,7 @@ text-decoration: none;
 /* Hero section */
 .hero-title{ 
     margin-bottom: 94px;
-
-    outline: solid red;   
+  
     background-color:var(--background-color-1);        
     text-align:Center;  
     
@@ -226,12 +224,9 @@ text-decoration: none;
     background-color: #F5F4FA;
 }
 .team-section-bg-color{
-    
     padding-bottom: 94px;
 
-    outline: solid red;
-    background-color: #F5F4FA;
-    
+    background-color: #F5F4FA; 
 }
 .team-section{ 
     margin-top: 94px;
@@ -291,42 +286,28 @@ text-decoration: none;
 /* footer section */
 
 .footer-section{
-    margin-left: auto;
-    margin-right: auto;
     background-color:var(--background-color-1);
-    
-    
-    
+
+    padding-bottom: 60px;
+    padding-top: 60px;
+    display: flex;
 }
+
+.footer-items{
+    display: block;
+}
+
 .logo-footer{
-margin-top: 60px;
+display: block;
+margin-bottom: 20px;
 font-family: Raleway,sans-serif;
 font-weight: 700; 
 font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
-}
-.contact-flex{
-    display: inline;
-}
-.mail-footer-section{
-    color: #FFFFFF99;
-    text-decoration: none;   
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1,71;
-    padding-bottom: 9px;
-}
-.tel-footer-section{
-    color: #FFFFFF99;
-    text-decoration: none;   
-    font-weight: 400; 
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1,71;
-}
+padding: 0;
 
+}
 
 .address-section{
     color: #FFFFFF;
@@ -335,16 +316,41 @@ text-decoration: none;
     font-style: normal;
     font-size: 14px;
     line-height: 1,71;
-    padding-bottom: 9px;
-    margin-top: 20px;
-
+    margin-bottom: 9px
 }
+
+
+/* Contact footer */
+.contact-flex{
+    display: inline;
+}
+.contact-footer{
+    color: #FFFFFF99;
+    text-decoration: none;   
+    font-weight: 400; 
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1,71;  
+}
+
+.contact-footer:hover,
+.contact-footer:focus{
+    color: var(--accent-color);
+}
+
+.contact-item:not(:last-child){
+    margin-bottom: 9px;
+}
+    
+
+
 
 /* Porfolio */
 .section-portfolio{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 /* button section */
 .button-type-flex{
     align-items: center;
@@ -373,6 +379,7 @@ ul{
     text-align: center;
     border: 1px solid transparent;
     border-radius: 4px;
+    
     background-color: #F5F4FA; 
     font-family: Roboto,sans-serif;
     font-weight: 500;
