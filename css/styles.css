@@ -38,6 +38,7 @@ img{
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 /* main nav  */
 .main-nav{
     display: flex;
@@ -49,6 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 
@@ -61,13 +63,14 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
+color: #000;
 
 }
 .color-logo{
     color: var(--accent-color);
 }
 .color-logo-2{
-    color: #212121;
+    color: #000;
 }
 .color-logo-footer{
     color: #FFFFFF;
@@ -133,7 +136,7 @@ text-decoration: none;
 
 /* Hero section */
 .hero{ 
-    margin-bottom: 94px;
+    
     padding-top: 200px;
     padding-bottom: 200px;
     margin-left: auto;
@@ -174,16 +177,25 @@ text-decoration: none;
     
 }
 /* features section */
+.features-section{
+    padding-top: 94px;
+}
     .features{
         display: flex;
     }
 
-    .features, .item + .item{
+    .features, .features-item + .features-item{
         margin-left: 30px;
+
     }
 
+    .features-item{
+    width: 270px;
+}
+
 .features, .title{
-    margin-top: 0px;
+    margin-top: 0;
+    margin-left: 0;
     margin-bottom: 10px;
 
     color:var(--primary-text-color);  
@@ -192,8 +204,8 @@ text-decoration: none;
     list-style: none;  
 }
 .second-text-title{
-    margin-top: 0px;
-
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -202,10 +214,13 @@ text-decoration: none;
 }
 
 /* Чем мы занимаемся section  */
-
+.our-job-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .our-job{
-    margin-top: 94px;
-    margin-bottom: 50px;
+    
+    padding-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -216,7 +231,7 @@ text-decoration: none;
 }
 .photo-job{
     margin-right: 30px;
-    margin-bottom: 94px;
+    
 }
 .our-job-flex{
     display: flex;
@@ -228,6 +243,7 @@ text-decoration: none;
 /* team section */
 .team-section-bg-color-outside{
     background-color: #F5F4FA;
+    padding-top: 94px;
 }
 .team-section-bg-color{
     padding-bottom: 94px;
@@ -235,9 +251,9 @@ text-decoration: none;
     background-color: #F5F4FA; 
 }
 .team-section{ 
-    margin-top: 94px;
-    margin-bottom: 50px;
-    padding-top: 94px;
+    
+    padding-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -245,15 +261,7 @@ text-decoration: none;
     list-style: none;
      
 }
-.name-member-section{  
-    margin-top: 30px;
-    margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.17;  
-    text-align: center;
-}
 
 .photo-team{
     display: flex;
@@ -276,9 +284,22 @@ text-decoration: none;
     
 }
 
+.team-text-size{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.name-member-section{  
+    
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;  
+    text-align: center;
+}
 .second-text-team{
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin-top: 0;
 
     color: var(--title-text-color);
     font-weight: 400;
@@ -351,6 +372,9 @@ padding: 0;
 
 
 
+
+
+
 /* Porfolio */
 .section-portfolio{
     padding-top: 94px;
@@ -397,7 +421,7 @@ ul{
 
 
 .button-type .item + .item{
-    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .button-portfolio:hover,
